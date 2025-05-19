@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭкоПринт - экологичная типография</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div data-include="header.html">
+    </div>
+
+    <main>
+    <!-- Герой с параллакс-эффектом -->
+    <section class="hero">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Экологичная печать в Москве</h1>
+            <p class="subtitle animate__animated animate__fadeIn animate__delay-1s">Используем переработанную бумагу и безопасные краски</p>
+            <button class="btn-main animate__animated animate__fadeInUp animate__delay-2s" onclick="openOrderForm()">Сделать заказ</button>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="advantages">
+        ...
+    </section>
+
+<!-- Популярные услуги -->
+<section class="popular-services" style="margin-bottom: 100px;">
+    <div class="container">
+        <h2 class="section-title">Популярные услуги</h2>
+        <div class="services-tabs">
+            <button class="tab-btn active" data-category="digital">Цифровая печать</button>
+            <button class="tab-btn" data-category="offset">Офсетная печать</button>
+            <button class="tab-btn" data-category="large-format">Широкоформатная</button>
+        </div>
+
+        <div class="services-grid image-gallery" id="servicesGallery">
+            <!-- Цифровая печать -->
+            <img src="images/photo-main.jpg" alt="Цифровая печать 1" class="gallery-img" data-category="digital">
+            <img src="images/photo-main.jpg" alt="Цифровая печать 2" class="gallery-img" data-category="digital">
+
+            <!-- Офсетная печать -->
+            <img src="images/photo-main.jpg" alt="Офсетная печать 1" class="gallery-img" data-category="offset" style="display:none;">
+            <img src="images/photo-main.jpg" alt="Офсетная печать 2" class="gallery-img" data-category="offset" style="display:none;">
+
+            <!-- Широкоформатная печать -->
+            <img src="images/photo-main.jpg" alt="Широкоформатная печать 1" class="gallery-img" data-category="large-format" style="display:none;">
+        </div>
+
+        <div class="text-center">
+            <a href="services.html" class="btn-outline">Все услуги</a>
+        </div>
+    </div>
+</section>
+
+<!-- Галерея работ -->
+<section class="portfolio-section">
+    <div class="container">
+        <h2 class="section-title">Наши работы</h2>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="business">Для бизнеса</button>
+            <button class="filter-btn" data-filter="events">Мероприятия</button>
+            <button class="filter-btn" data-filter="packaging">Упаковка</button>
+        </div>
+
+        <div class="portfolio-grid image-gallery" id="portfolioGallery">
+            <!-- Все -->
+            <img src="images/photo-main.jpg" alt="Для бизнеса 1" class="gallery-img" data-category="business">
+            <img src="images/photo-main.jpg" alt="Мероприятия 1" class="gallery-img" data-category="events">
+            <img src="images/photo-main.jpg" alt="Упаковка 1" class="gallery-img" data-category="packaging">
+            <img src="images/photo-main.jpg" alt="Для бизнеса 2" class="gallery-img" data-category="business">
+        </div>
+
+        <div class="text-center">
+            <a href="gallery.html" class="btn-outline">Вся галерея</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Отзывы -->
+    <section class="reviews-section">
+        ...
+    </section>
+</main>
+
+
+    <div data-include="footer.html"></div>
+    <div data-include="modal.html"></div>
+
+    <script src="include.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
